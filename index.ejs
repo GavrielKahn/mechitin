@@ -1,0 +1,121 @@
+<% include header%>
+<div class="ui bottom attached segment pushable">
+  <div class="ui visible inverted left vertical sidebar menu music">
+ <a class="item">
+      <img src="https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg?auto=compress&cs=tinysrgb&h=350">
+    </a>
+    <a class="item">
+      <img src="https://images.pexels.com/photos/1036857/pexels-photo-1036857.jpeg?auto=compress&cs=tinysrgb&h=350">
+    </a>
+    <a class="item">
+      <img src="https://images.pexels.com/photos/62097/pexels-photo-62097.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+    </a>    <a class="item">
+      <img src="https://images.pexels.com/photos/51115/restaurant-wine-glasses-served-51115.jpeg?auto=compress&cs=tinysrgb&h=350">
+    </a>
+  </div>
+  
+   
+<div class="ui segment pushable">
+  <div class="ui visible inverted right vertical sidebar menu">
+    <a class="item">
+      <i class="home icon"></i>
+      One Man Band
+    </a>
+    <a class="item">
+      <i class="block layout icon"></i>
+      Singers
+    </a>
+    <a class="item">
+      <i class="smile icon"></i>
+      Badchunim
+    </a>
+    <a class="item">
+      <i class="calendar icon"></i>
+      Choirs
+    </a>    
+    <a class="item">
+      <i class="calendar icon"></i>
+      Bands
+    </a>   
+    <a class="item">
+      <i class="calendar icon"></i>
+      Guitars
+    </a>  
+    <a class="item">
+      <i class="icon"></i>
+      Trumpet
+    </a>  
+    <a class="item">
+      <i class="icon"></i>
+      Trumbone
+    </a> 
+    <a class="item">
+      <i class="icon"></i>
+      Saxephones
+    </a>  
+    <a class="item">
+      <i class="icon"></i>
+      Clarinet
+    </a>  
+    <a class="item">
+      <i class="icon"></i>
+      Violins
+    </a>  
+    <a class="item">
+      <i class="icon"></i>
+      Drummers
+    </a>
+  </div>
+  <div class="pusher">
+    <div class="ui basic segment">
+      <h3 class="ui header">Application Content
+      </h3>
+         <div class="mainSide ui main text container">
+   	
+    <div style="margin-left: 250px;" class="ui top attached segment music">
+    	<div class="ui huge header">Music Site</div>
+<div class="ui divided items">
+	<% halls.forEach(function(hall){ %>
+	 <div class="item">
+	    <div class="image">
+	      <img src="https://images.pexels.com/photos/279835/pexels-photo-279835.jpeg?auto=compress&cs=tinysrgb&h=350">
+	      <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>56
+	    </div>
+	    <div class="content">
+	      <a class="header" href="/halls/<%= hall._id %>"><%= hall.name %></a>
+	      <div class="meta">
+	        <span class="cinema"><a href="tel:"></a>917-392-3483</span>
+	        
+	      </div>
+	      <div class="description">
+          <p>1262 54th street brooklyn NY</p>
+	      </div>
+	      <div class="extra">
+	        <a href="/halls/<%=hall._id %>" class="ui floated basic violet button">
+	          Read More
+	          <i class="right chevron icon"></i>
+	        </a>
+	      </div>
+	    </div>
+	  </div>
+	<% }); %>
+</div>
+</div>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+
+
+    </div>
+  </div>
+</div>
+
+
+    
+  </div>
+  <% include footer %>
